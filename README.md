@@ -5,5 +5,3 @@ I decided to build a small air quality sensor station. All the sensors are handl
 Most of the female headers on PCB have their legs bent, so that they can be soldered like SMD. I did this, since I wanted to reduce the number of THT components, which would interfere with PMS7003 beneath the board. There are two headers that still have THT holes – programming and I2C display output. Those two were soldered with cut pins, so that they wouldn’t reach beneath the PCB. There is also a mistake done on PCB – a connection between GND and “wake” pin of CCS811 module is missing. This was easily fixed by scraping mask off PCB and making a solder jumper to the pin.
 
 My current enclosure doesn’t support the use of I2C display, since I am sending all the data to my Blynk server, but I might design one in the future. Note that everything press-fits into the enclosure, so no screws are used.
-
-All of the files (Altium, code, .stl) are on my github: https://github.com/Yacob135/ESP8266_sensor_station
